@@ -21,6 +21,10 @@ export default function Model() {
         chromaticAberration: 0.02,
         backside: true,
     }
+
+    const handleClick = useCallback(() => {
+        window.open('https://instagram.com/payingheavy', '_blank');
+    }, []);
     
     return (
         <group scale={viewport.width / 3.75}>
@@ -54,6 +58,9 @@ export default function Model() {
                 color="white" 
                 anchorX="center" 
                 anchorY="middle"
+                onClick={handleClick}
+                onPointerOver={(e) => document.body.style.cursor = 'pointer'}
+                onPointerOut={(e) => document.body.style.cursor = 'auto'}
             >
                 @payingheavy
             </Text>
