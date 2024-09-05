@@ -55,7 +55,7 @@ export default function Model() {
                 anchorX="center" 
                 anchorY="middle"
             >
-                for commissions @payingheavy
+                @payingheavy
             </Text>
         </group>
     )
