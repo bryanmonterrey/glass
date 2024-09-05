@@ -20,16 +20,43 @@ export default function Model() {
         ior: 1.2,
         chromaticAberration: 0.02,
         backside: true,
-      }
+    }
     
     return (
-        <group scale={viewport.width / 3.75} >
-            <Text font={'/fonts/PPNeueMontreal-Bold.otf'} position={[0, 0, -1]} fontSize={0.5} color="white" anchorX="center" anchorY="middle">
+        <group scale={viewport.width / 3.75}>
+            <Text 
+                font={'/fonts/PPNeueMontreal-Bold.otf'} 
+                position={[0, 0, -1]} 
+                fontSize={0.5} 
+                color="white" 
+                anchorX="center" 
+                anchorY="middle"
+            >
                 bryan monterrey.
             </Text>
             <mesh ref={torus} {...nodes.Torus002}>
                 <MeshTransmissionMaterial {...materialProps}/>
             </mesh>
+            <Text 
+                font={'/fonts/PPNeueMontreal-Bold.otf'} 
+                position={[0, -1.68, -1]} 
+                fontSize={0.061} 
+                color="white" 
+                anchorX="center" 
+                anchorY="middle"
+            >
+                software developer and product designer
+            </Text>
+            <Text 
+                font={'/fonts/PPNeueMontreal-Bold.otf'} 
+                position={[0, -1.78, -1]} 
+                fontSize={0.061} 
+                color="white" 
+                anchorX="center" 
+                anchorY="middle"
+            >
+                for commissions @payingheavy
+            </Text>
         </group>
     )
 }
