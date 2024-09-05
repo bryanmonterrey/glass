@@ -51,7 +51,7 @@ export default function Model() {
                 anchorX="center" 
                 anchorY="middle"
             >
-                bryan monterrey.
+                bryan monterrey?
             </Text>
             <mesh ref={torus} {...nodes.Torus002}>
                 <MeshTransmissionMaterial {...materialProps}/>
