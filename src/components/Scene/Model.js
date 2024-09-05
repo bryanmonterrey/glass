@@ -8,6 +8,7 @@ export default function Model() {
     const { nodes } = useGLTF("/medias/torrus.glb");
     const { viewport } = useThree()
     const torus = useRef(null);
+    const [hovered, setHovered] = useState(false);
     
     useFrame( () => {
         torus.current.rotation.x += 0.02
