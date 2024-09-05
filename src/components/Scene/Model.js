@@ -56,7 +56,7 @@ export default function Model() {
                 font={'/fonts/PPNeueMontreal-Bold.otf'} 
                 position={[0, -1.75, -1]} 
                 fontSize={0.095} 
-                color={hovered ? "#595656" : "white"}
+                color={hovered ? "dodgerblue" : "white"}
                 anchorX="center" 
                 anchorY="middle"
                 onClick={handleClick}
