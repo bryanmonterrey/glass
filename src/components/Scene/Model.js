@@ -58,7 +58,7 @@ export default function Model() {
             </mesh>
             <Text 
                 font={'/fonts/PPNeueMontreal-Bold.otf'} 
-                position={[0, -1.66, -1]} 
+                position={[0, -1.64, -1]} 
                 fontSize={0.06} 
                 color="white" 
                 anchorX="center" 
