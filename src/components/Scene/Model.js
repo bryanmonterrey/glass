@@ -40,7 +40,7 @@ export default function Model() {
             <Text 
                 font={'/fonts/PPNeueMontreal-Bold.otf'} 
                 position={[0, -1.65, -1]} 
-                fontSize={0.055} 
+                fontSize={0.025} 
                 color="white" 
                 anchorX="center" 
                 anchorY="middle"
