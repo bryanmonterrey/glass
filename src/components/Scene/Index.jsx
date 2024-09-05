@@ -1,10 +1,11 @@
 'use client';
 
+import dynamic from 'next/dynamic'
 import { Canvas } from '@react-three/fiber'
-import Model from './Model';
 import { Environment } from '@react-three/drei'
 
 const Model = dynamic(() => import('./Model'), { ssr: false })
+
 export default function Index() {
   return (
     <Canvas style={{background: '#000000'}}>
