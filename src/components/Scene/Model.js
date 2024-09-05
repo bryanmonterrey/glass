@@ -26,6 +26,20 @@ export default function Model() {
     const handleClick = useCallback(() => {
         window.open('https://instagram.com/payingheavy', '_blank');
     }, []);
+
+    const handlePointerOver = useCallback((e) => {
+        setHovered(true);
+        document.body.style.cursor = 'pointer';
+        console.log('Hovered: true');
+    }, []);
+
+    const handlePointerOut = useCallback((e) => {
+        setHovered(false);
+        document.body.style.cursor = 'auto';
+        console.log('Hovered: false');
+    }, []);
+
+    console.log('Render - Hovered state:', hovered);
     
     return (
         <group scale={viewport.width / 3.75}>
@@ -60,8 +74,8 @@ export default function Model() {
                 anchorX="center" 
                 anchorY="middle"
                 onClick={handleClick}
-                onPointerOver={(e) => document.body.style.cursor = 'pointer'}
-                onPointerOut={(e) => document.body.style.cursor = 'auto'}
+                onPointerOver={handlePointerOver}
+                onPointerOut={handlePointerOut}
             >
                 @payingheavy
             </Text>
