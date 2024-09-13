@@ -77,7 +77,7 @@ export default function Model() {
                 onPointerOver={handlePointerOver}
                 onPointerOut={handlePointerOut}
             >
-                @payingheavy
+                @looshxyz
             </Text>
         </group>
     )
