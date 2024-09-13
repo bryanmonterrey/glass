@@ -24,7 +24,7 @@ export default function Model() {
     }
 
     const handleClick = useCallback(() => {
-        window.open('https://instagram.com/payingheavy', '_blank');
+        window.open('https://instagram.com/looshxyz', '_blank');
     }, []);
 
     const handlePointerOver = useCallback((e) => {
