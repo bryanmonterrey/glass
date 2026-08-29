@@ -24,7 +24,7 @@ export default function Model() {
     }
 
     const handleClick = useCallback(() => {
-        window.open('https://instagram.com/bryanjmonterrey', '_blank');
+        window.open('https://x.com/meow5hi', '_blank');
     }, []);
 
     const handlePointerOver = useCallback((e) => {
@@ -77,7 +77,7 @@ export default function Model() {
                 onPointerOver={handlePointerOver}
                 onPointerOut={handlePointerOut}
             >
-                @bryanjmonterrey
+                @meow5hi
             </Text>
         </group>
     )
