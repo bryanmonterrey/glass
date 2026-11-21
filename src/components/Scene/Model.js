@@ -43,29 +43,9 @@ export default function Model() {
     
     return (
         <group scale={viewport.width / 3.75}>
-            <Text 
-                font={'/fonts/PPNeueMontreal-Bold.otf'} 
-                position={[0, 0, -1]} 
-                fontSize={0.5} 
-                color="white" 
-                anchorX="center" 
-                anchorY="middle"
-            >
-                bryan monterrey?
-            </Text>
             <mesh ref={torus} {...nodes.Torus002}>
                 <MeshTransmissionMaterial {...materialProps}/>
             </mesh>
-            <Text 
-                font={'/fonts/PPNeueMontreal-Bold.otf'} 
-                position={[0, -1.64, -1]} 
-                fontSize={0.06} 
-                color="white" 
-                anchorX="center" 
-                anchorY="middle"
-            >
-                software developer and product designer
-            </Text>
             <Text 
                 font={'/fonts/PPNeueMontreal-Bold.otf'} 
                 position={[0, -1.75, -1]} 
